@@ -1,7 +1,11 @@
 # Imports
-from getmac import get_mac_address
-import argparse
-import warnings
+try:
+    from getmac import get_mac_address
+    import argparse
+    import warnings
+except ImportError:
+    raise ImportError(
+        'Error al importar una librería. Revise el archivo "requirements.txt" el cual contiene todos los complementos para una correcta ejecución del programa.')
 
 # ARGP
 parser = argparse.ArgumentParser()
@@ -30,3 +34,5 @@ if(args.mac != None):
     #host_mac = get_mac_address(hostname="localhost")
     #updated_mac = get_mac_address(ip="10.0.0.1", network_request=True)
     # print(f'{eth_mac}\n{win_mac}\n{ip_mac}\n{ip6_mac}\n{host_mac}\n{updated_mac}\n')
+
+print("Para ver la lista de parámetros ejecute el nombre del programa seguido del parámetro -h.")
