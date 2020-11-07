@@ -7,4 +7,9 @@ Vicente Reyes Cáceres (vicente.reyes@alumnos.uv.cl)
 
 # Como instalar:
 
-Para una correcta ejecución del programa, se deben instalar todas las librerías necesarias adjuntadas en el archivo "requirements.txt". En caso de Windows, 
+Para una correcta ejecución del programa, se deben instalar todas las librerías necesarias adjuntadas en el archivo "requirements.txt". En caso de Windows, basta con ingresar a la carpeta tarea1-OUILookup y ejecutar la siguiente línea en la línea de comandos (cmd):
+
+``pip install -r requirements.txt``
+
+# Como funciona:
+
