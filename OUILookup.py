@@ -1,6 +1,5 @@
 # Imports
 try:
-    import random
     import getopt
     import sys
     from getmac import get_mac_address
@@ -29,7 +28,7 @@ def main():
             uso()
         if opt in ('--ip'):
             IP = arg
-        elif opt in ('--maxtime'):
+        elif opt in ('--mac'):
             MAC = arg
 
     # IP o MAC deben estar ingresadas.
