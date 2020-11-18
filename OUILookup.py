@@ -65,7 +65,7 @@ def getVendor(IP, MAC):
         else:
             return eth_mac, "Error: ip is outside the host network"
     else:
-        return MAC, solicitudDB(eth_mac)
+        return MAC, solicitudDB(MAC)
 
 
 def solicitudDB(MAC):
